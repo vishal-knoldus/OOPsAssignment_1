@@ -1,15 +1,5 @@
 package org.knoldus.main.Question1
-/*compare(that: A): Int
-Result of comparing this with operand that.
 
-Implement this method to determine how instances of A will be sorted.
-
-Returns x where:
-
-x < 0 when this < that
-x == 0 when this == that
-x > 0 when this > that
-*/
 class Person(val name : String, val age : Int) extends Ordered[Person] {
   override def compare(that: Person): Int = {
     if(this.name == that.name)
